@@ -9,15 +9,10 @@
     "lint": "next lint",
     "prepare": "husky install"
   },
-  "husky": {
-    "hooks": {
-      "pre-commit": "lint-staged"
-    }
-  },
   "lint-staged": {
     "*.{ts, tsx}": [
       "prettier --write",
-      "eslint --fix"
+      "eslint --cache --fix"
     ]
   },
   "dependencies": {
