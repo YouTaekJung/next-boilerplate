@@ -11,8 +11,8 @@
   },
   "lint-staged": {
     "*.{ts, tsx}": [
-      "prettier --print-width 80 --trailing-comma es5 --single-quote --tab-width 2 --write",
-      "git add"
+      "prettier --write",
+      "eslint --fix"
     ]
   },
   "dependencies": {
